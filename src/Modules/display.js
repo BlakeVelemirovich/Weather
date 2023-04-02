@@ -1,5 +1,6 @@
 const displayWeatherCard = (weatherContent) => {
     const weatherCard = document.querySelector('.weatherCard');
+    weatherCard.innerHTML = ' ';
     //City Name
     let cityName = document.createElement('h2');
     cityName.innerText = weatherContent.name;

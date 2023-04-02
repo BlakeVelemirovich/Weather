@@ -1,4 +1,4 @@
-import './SASS/main.scss';
+import './SASS/styles.scss';
 import apiCall from './Modules/weatherAPI';
 import displayWeatherCard from './Modules/display';
 
