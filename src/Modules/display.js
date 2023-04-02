@@ -4,9 +4,10 @@ const displayWeatherCard = (weatherContent) => {
     //City Name
     let cityName = document.createElement('h2');
     cityName.innerText = weatherContent.name;
+    cityName.className = 'cityName';
     weatherCard.appendChild(cityName);
     //Temperature
-    weatherCard.appendChild(contentConstructor('Temperature:', weatherContent.main.temp, 'h2', '°C'));
+    weatherCard.appendChild(contentConstructor('', weatherContent.main.temp, 'h2', '°C'));
     //Feels Like
     weatherCard.appendChild(contentConstructor('Feels Like:', weatherContent.main.feels_like, 'p', '°C'));
     //Humidity
